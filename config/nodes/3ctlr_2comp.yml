@@ -1,0 +1,43 @@
+
+# Define the controller node and compute nodes.
+# Create three controller nodes and one compute node.
+undercloud_vcpu: 8
+undercloud_disk: 100
+undercloud_memory: 38288
+
+control_vcpu: 3
+control_memory: 8192
+compute_vcpu: 1
+compute_memory: 4096
+
+node_count: 5
+
+overcloud_nodes:
+  - name: control_0
+    flavor: control
+    virtualbmc_port: 6230
+
+  - name: control_1
+    flavor: control
+    virtualbmc_port: 6231
+
+  - name: control_2
+    flavor: control
+    virtualbmc_port: 6232
+
+  - name: compute_0
+    flavor: compute
+    virtualbmc_port: 6233
+
+  - name: compute_1
+    flavor: compute
+    virtualbmc_port: 6234
+    
+topology_map:
+  Controller:
+    scale: 3
+  Compute:
+    scale: 2
+    
+network_isolation: true
+network_isolation_type: 'single-nic-vlans'
