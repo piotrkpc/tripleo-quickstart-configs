@@ -36,8 +36,10 @@ overcloud_nodes:
 topology_map:
   Controller:
     scale: 3
+    flavor: oooq_control
   Compute:
     scale: 2
+    flavor: oooq_compute
     
 network_isolation: true
 network_isolation_type: 'single-nic-vlans'
