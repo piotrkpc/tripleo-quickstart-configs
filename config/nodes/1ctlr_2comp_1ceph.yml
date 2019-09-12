@@ -9,7 +9,7 @@ default_memory: 12240
 
 ceph_disk: 30
 ceph_vcpu: 2
-extradisks_size: '{{ ceph_disk }}'
+extradisks_size: 35
 
 # Define a controller node, a compute node, and a ceph node.
 overcloud_nodes:
