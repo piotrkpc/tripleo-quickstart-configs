@@ -15,5 +15,6 @@ OOOQ_NODES=./tripleo-quickstart-configs/config/nodes/1ctlr_2comp_1ceph.yml
     --no-clone \
     --tags all \
     -e undercloud_undercloud_ntp_servers=clock.redhat.com \
+    -e ntp_server=clock.redhat.com \
     127.0.0.2
 ```
