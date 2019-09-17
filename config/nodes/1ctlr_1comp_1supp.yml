@@ -11,6 +11,15 @@ overcloud_nodes:
     flavor: compute
     virtualbmc_port: 6233
 
+# Tell tripleo which nodes to deploy.
+topology_map:
+  Controller:
+    scale: 1
+    flavor: oooq_control
+  Compute:
+    scale: 1
+    flavor: oooq_compute
+
 # Define the supplmental node to be used for the FreeIPA server.
 supplemental_node:
   name: ipa
