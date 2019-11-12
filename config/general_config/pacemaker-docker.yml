@@ -147,4 +147,4 @@ tempest_whitelist:
 #   {%- endif -%}
 
 # Switch this variable to 'podman' once we run OVB jobs on CentOS8.
-# overcloud_container_cli: docker
+overcloud_container_cli: docker
