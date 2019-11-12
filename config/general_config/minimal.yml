@@ -148,3 +148,4 @@ undercloud_enable_tempest: >-
 # tempest config and execution are working
 run_tempest: true
 test_white_regex: 'tempest.api.compute.admin'
+overcloud_container_cli: docker
