@@ -23,3 +23,7 @@ node_count: 3
 topology_map:
   Compute:
     scale: 2
+    flavor: oooq_compute
+  Controller:
+    scale: 1
+    flavor: oooq_control
